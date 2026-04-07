@@ -1,3 +1,3 @@
 # ver
 
-I'm cplugin, my version is 0407.22.35
+I'm cplugin, my version is 0407.23.7

@@ -1,3 +1,3 @@
 # ver
 
-I'm aplugin, my version is 0407.22.35
+I'm aplugin, my version is 0407.23.7
