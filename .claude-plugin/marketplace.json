@@ -3,7 +3,7 @@
   "description": "Experiments with Auggie/Claude plugins",
   "plugins": [
     {
-      "source": "./cplugin",
+      "source": "./cplugin"
     }
   ]
 }
