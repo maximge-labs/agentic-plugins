@@ -8,6 +8,10 @@
     {
       "source": "./cplugin",
       "name": "cplugin"
+    },
+    {
+      "source": "./aplugin",
+      "name": "aplugin"
     }
   ]
 }
