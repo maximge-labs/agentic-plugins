@@ -1,0 +1,9 @@
+{
+  "name": "cmarket",
+  "description": "Experiments with Auggie/Claude plugins",
+  "plugins": [
+    {
+      "source": "./cplugin",
+    }
+  ]
+}

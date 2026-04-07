@@ -1,0 +1,12 @@
+{
+  "name": "amarket",
+  "description": "Experiments with Auggie/Claude plugins",
+  "plugins": [
+    {
+      "source": "./aplugin",
+    },
+    {
+      "source": "./cplugin",
+    }
+  ]
+}
