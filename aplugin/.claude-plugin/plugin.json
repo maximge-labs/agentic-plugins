@@ -1,4 +1,8 @@
 {
-  "description": "Experiment with claude plugins",
-  "version": "0407.23.13"
+  "name": "aplugin",
+  "description": "A greeting aplugin to learn the basics",
+  "version": "0407.23.14",
+  "author": {
+    "name": "Maxim"
+  }
 }
