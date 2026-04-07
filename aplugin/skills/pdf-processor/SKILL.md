@@ -8,7 +8,7 @@ description: Extract text and metadata from a PDF file. Use when the user asks t
 Ask for the PDF file path if not already provided. Then execute:
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/skills/pdf-processor/scripts/process.py" "<pdf-path>"
+python "scripts/process.py" "<pdf-path>"
 ```
 
 Display the extracted text, page count, and metadata to the user.
