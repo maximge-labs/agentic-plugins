@@ -1,12 +1,17 @@
 {
   "name": "amarket",
+  "owner": {
+    "name": "Maxim"
+  },
   "description": "Experiments with Auggie/Claude plugins",
   "plugins": [
     {
       "source": "./aplugin",
+      "name": "aplugin"
     },
     {
       "source": "./cplugin",
+      "name": "cplugin"
     }
   ]
 }
