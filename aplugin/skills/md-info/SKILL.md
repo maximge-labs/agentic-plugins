@@ -5,7 +5,7 @@ description: Get info about a markdown file — word count, line count, headers,
 
 # md-info
 
-Ask for the markdown file path if not already provided uin user input. Then execute:
+Infer markdown file path from the user input. Then execute:
 
 ```bash
 bash "${CLAUDE_PLUGIN_ROOT}/skills/md-info/scripts/info.sh" "<md-path>"

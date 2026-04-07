@@ -1,7 +1,7 @@
 {
   "name": "aplugin",
   "description": "A greeting aplugin to learn the basics",
-  "version": "0408.0.13",
+  "version": "0408.0.15",
   "author": {
     "name": "Maxim"
   }
