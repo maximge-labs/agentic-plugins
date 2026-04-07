@@ -10,5 +10,6 @@ done
 
 git add .
 git commit -m "$new_version"
+git push
 
 echo "Bumped -> $new_version"
