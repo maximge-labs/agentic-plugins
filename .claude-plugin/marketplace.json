@@ -1,5 +1,8 @@
 {
   "name": "cmarket",
+  "owner": {
+    "name": "Maxim"
+  },
   "description": "Experiments with Auggie/Claude plugins",
   "plugins": [
     {
