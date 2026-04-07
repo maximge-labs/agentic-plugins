@@ -13,7 +13,7 @@ if [[ ! -f "$file" ]]; then
   exit 1
 fi
 
-lines=$(wc -l < "$file")
+lines=$(awk 'END{print NR}' "$file")
 words=$(wc -w < "$file")
 chars=$(wc -c < "$file")
 avg_line=$(awk 'NF{sum+=NF; n++} END{printf "%.1f", (n ? sum/n : 0)}' "$file")
@@ -22,7 +22,7 @@ top_words=$(tr -s '[:space:]' '\n' < "$file" \
   | tr '[:upper:]' '[:lower:]' \
   | grep -E '^[a-z]{3,}$' \
   | sort | uniq -c | sort -rn | head -5 \
-  | awk '{printf "  %s (%s)\n", $2, $1}')
+  | awk '{printf "  %s (%s)\n", $2, $1}' || true)
 
 echo "file        : $file"
 echo "lines       : $lines"
