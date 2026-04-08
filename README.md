@@ -46,6 +46,48 @@ A minimal companion plugin with `run` and `ver` commands.
 bash bump.sh
 ```
 
+## Install and update
+
+### Claude Code
+
+Register the marketplace and install plugins:
+
+```sh
+claude plugin marketplace add maximge-labs/agentic-plugins
+claude plugin install cplugin@cmarket
+claude plugin install aplugin@cmarket
+```
+
+After a new version is published, pull the update:
+
+```sh
+claude plugin marketplace update cmarket
+claude plugin update cplugin@cmarket
+claude plugin update aplugin@cmarket
+```
+
+### Auggie CLI
+
+```sh
+auggie plugin marketplace add maximge-labs/agentic-plugins
+auggie plugin install aplugin@amarket
+auggie plugin install cplugin@amarket
+```
+
+Update:
+
+```sh
+auggie plugin marketplace update amarket
+auggie plugin update aplugin@amarket
+auggie plugin update cplugin@amarket
+```
+
+### Notes
+
+- Claude does not auto-update marketplace cache -- it stays frozen until you explicitly run the update commands above
+- New colleague clones the repo -> Claude auto-installs (no action needed); version bump -> manual update required
+- Default install scope is `user` (global, all projects); use `--scope project` for repo-level (`.claude/settings.json`) or `--scope local` for machine-local (`.claude/settings.local.json`, gitignored)
+
 ## Links
 
 ### Skills
@@ -54,7 +96,7 @@ bash bump.sh
 - [Using scripts in skills](https://agentskills.io/skill-creation/using-scripts#using-scripts-in-skills)
 - [Plugin examples with scripts](https://github.com/anthropics/skills)
 
-### Claude Code
+### Claude Code docs
 
 - [Create plugins](https://docs.anthropic.com/en/docs/claude-code/plugins) — skills, agents, hooks, MCP servers
 - [Plugins reference](https://docs.anthropic.com/en/docs/claude-code/plugins-reference) — full schema and CLI reference
@@ -62,7 +104,7 @@ bash bump.sh
 - [Complete guide to building skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)
 - [Permissions](https://code.claude.com/docs/en/permissions)
 
-### Auggie CLI
+### Auggie CLI docs
 
 - [Plugins and marketplaces](https://docs.augmentcode.com/cli/plugins)
 
