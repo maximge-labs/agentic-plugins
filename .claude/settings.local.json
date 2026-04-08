@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(scripts/info.sh*)"
+      "Bash(scripts/info.sh*)",
+      "Bash(bash*scripts*info.sh*)"
     ]
   }
 }
